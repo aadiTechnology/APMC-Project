@@ -69,8 +69,8 @@ namespace MyProject
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
+            //app.UseCors(MyAllowSpecificOrigins);
             app.UseCors(MyAllowSpecificOrigins);
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
